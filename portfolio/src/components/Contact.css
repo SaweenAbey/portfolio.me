@@ -97,8 +97,8 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(14, 239, 255, 0.1);
-  border: 2px solid rgba(14, 239, 255, 0.3);
+  background: transparent;
+  border: 2px solid #0ef;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,14 +106,20 @@
   text-decoration: none;
   font-size: 0.75rem;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .social-icon:hover {
   background: linear-gradient(135deg, #0ef 0%, #00d4ff 100%);
   color: #1a1a2e;
-  border-color: #0ef;
-  transform: translateY(-5px);
+  border-color: #00d4ff;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(14, 239, 255, 0.4);
+}
+
+.social-icon svg {
+  width: 24px;
+  height: 24px;
 }
 
 .contact-form {
@@ -339,6 +345,11 @@
     width: 40px;
     height: 40px;
     font-size: 0.6rem;
+  }
+
+  .social-icon svg {
+    width: 18px;
+    height: 18px;
   }
 
   .contact-form {
