@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './Projects.css'
 import trainImage from '../assets/image.png'
+import getzImage from '../assets/gettz.png'
+import redlyImg from '../assets/readly.jpeg'
+import welnest from '../assets/welnest.png'
 
 const projectsData = [
   {
@@ -17,8 +20,9 @@ const projectsData = [
     id: 2,
     title: 'READLY - E-Book Reading App',
     description: 'A mobile application for reading e-books with a user-friendly interface, built with Kotlin for Android platform.',
-    technologies: ['Kotlin', 'Android', 'Mobile Development', 'UI/UX'],
-    image: '📚',
+    technologies: ['Kotlin', 'Android', 'Mobile Development', 'UI/UX','Android Studio','MVVM'],
+    image: redlyImg,
+    isImageUrl: true,
     link: 'https://github.com/SaweenAbey/READLY-E-Book-Reading-Mobile-Application',
     github: 'https://github.com/SaweenAbey/READLY-E-Book-Reading-Mobile-Application'
   },
@@ -27,7 +31,8 @@ const projectsData = [
     title: 'WellNest - Health & Wellness App',
     description: 'A mobile application focused on health and wellness tracking, providing users with tools to monitor their well-being.',
     technologies: ['Kotlin', 'Android', 'Health Tech', 'Firebase'],
-    image: '💪',
+    image: welnest,
+    isImageUrl: true,
     link: 'https://github.com/SaweenAbey/WellNest-Mobile-Application',
     github: 'https://github.com/SaweenAbey/WellNest-Mobile-Application'
   },
@@ -54,7 +59,8 @@ const projectsData = [
     title: 'Gettz Fitness Application',
     description: 'A fitness tracking and management application where users can manage workouts, track progress, and achieve fitness goals.',
     technologies: ['React', 'JavaScript', 'Fitness Tech', 'Full Stack'],
-    image: '🏋️',
+    image: getzImage,
+    isImageUrl: true,
     link: 'https://github.com/WasikaAnusanga/Gettz-Fitness',
     github: 'https://github.com/WasikaAnusanga/Gettz-Fitness'
   }
