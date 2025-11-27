@@ -1,5 +1,5 @@
 import './Hero.css'
-import heroImage from '../assets/Media.jpg'
+import heroImage from '../assets/Media.png'
 import cvFile from '../assets/Savin Udana CV Resume.pdf'
 
 export default function Hero() {

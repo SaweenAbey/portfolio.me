@@ -4,6 +4,7 @@ import trainImage from '../assets/image.png'
 import getzImage from '../assets/gettz.png'
 import redlyImg from '../assets/readly.jpeg'
 import welnest from '../assets/welnest.png'
+import busbook from '../assets/busbook.png'
 
 const projectsData = [
   {
@@ -50,7 +51,8 @@ const projectsData = [
     title: 'Bus Booking System',
     description: 'A collaborative project for bus booking and reservation with a dynamic navigation interface, built with PHP and modern web technologies.',
     technologies: ['PHP', 'Web Development', 'Database', 'Frontend'],
-    image: '�',
+    image: busbook,
+    isImageUrl: true,
     link: 'https://github.com/InoshMatheesha/Bus-Booking-System',
     github: 'https://github.com/InoshMatheesha/Bus-Booking-System'
   },
