@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
+import { useTheme } from '../context/ThemeContext'
 import './Header.css'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
+  const { isDark, toggleTheme } = useTheme()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -90,6 +92,15 @@ export default function Header() {
               className={activeSection === 'contact' ? 'active' : ''}
             >
               Contact
+            </button>
+
+            <button 
+              className="theme-toggle"
+              onClick={toggleTheme}
+              aria-label="Toggle theme"
+              title={isDark ? 'Light mode' : 'Dark mode'}
+            >
+              {isDark ? '☀️' : '🌙'}
             </button>
           </nav>
         </div>
